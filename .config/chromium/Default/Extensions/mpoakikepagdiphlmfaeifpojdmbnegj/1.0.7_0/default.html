@@ -1,0 +1,1024 @@
+<!DOCTYPE HTML>
+<html lang="en-US" data-cast-api-enabled="true">
+<head>
+    <link rel="stylesheet" href="default.css" />
+    <link rel="stylesheet" href="shepherd-theme-arrows.css" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8,minimum-scale=0.8, maximum-scale=0.8">
+    <title>Video Deck for YouTube™</title>
+    <meta name="application-name" content="Video Deck for YouTube™"/>
+    <meta name="description" content="Easiest way to follow your favorite YouTube subscriptions."/>
+    <script type="text/javascript" src="swfobject.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery.timeago.js"></script>
+    <script type="text/javascript" src="jquery.appear.js"></script>
+    <script type="text/javascript" src="jquery.tipsy.js"></script>
+    <script type="text/javascript" src="jquery.scrollLock.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="shepherd.min.js"></script>
+    <script type="text/javascript" src="default.min.js"></script>
+
+
+    <script src="https://apis.google.com/js/client.js?onload=gapiLoaded"></script>
+    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+
+
+</head>
+
+<body class="extension">
+<header class="nav-header">
+    <nav>
+        <h1><span class="logo"></span></h1>
+        <ul class="nav-bar">
+            <li class="add-data no-login" >
+                <div class="menu-add-btn tooltip" title="Add columns">
+                    <div class="menu-add-icon"><i class="icon-plus"></i></div>
+                </div>
+                <div class="menu-items menu-items-wide">
+                    <div class="menu-item btn-add-sub">
+                        <div class="menu-item-icon"><i class="icon-torsos"></i></div>
+                        <div class="menu-item-text menu-item-first">Subscriptions</div>
+                    </div>
+                    <div class="menu-item btn-add-playlist">
+                        <div class="menu-item-icon"><i class="icon-list-thumbnails"></i></div>
+                        <div class="menu-item-text">Playlists</div>
+                    </div>
+                    <div class="menu-item btn-add-custom">
+                        <div class="menu-item-icon"><i class="icon-results-demographics"></i></div>
+                        <div class="menu-item-text">Custom Columns</div>
+                    </div>
+                    <div class="menu-item btn-add-watch-later">
+                        <div class="menu-item-icon"><i class="icon-clock"></i></div>
+                        <div class="menu-item-text">Watch Later</div>
+                    </div>
+                </div>
+            </li>
+            <li class="btn-search no-login">
+                <div class="search-area-wrapper">
+                    <textarea class="search-area" rows="1"></textarea>
+                    <div class="search-btn"><div class="menu-search-icon"><i class="icon-search-find"></i></div></div>
+                </div>
+            </li>
+
+
+            <li class="user-data no-login">
+                <div class="menu-btn tooltip" title="Options">
+                    <div class="menu-icon icon-gear-setting"></div>
+                </div>
+                <div class="menu-items right">
+                    <div class="menu-item user-settings">
+                        <div class="menu-item-icon"><i class="icon-gear-setting-2"></i></div>
+                        <div class="menu-item-text menu-item-first">Settings</div>
+                    </div>
+                    <div class="menu-item user-actions">
+                        <div class="menu-item-icon"><i class="icon-tools"></i></div>
+                        <div class="menu-item-text">Tools</div>
+                    </div>
+                    <div class="menu-item user-guide">
+                        <div class="menu-item-icon"><i class="icon-magic-wand"></i></div>
+                        <div class="menu-item-text">Tour</div>
+                    </div>
+                    <div class="menu-item user-feedback">
+                        <div class="menu-item-icon"><i class="icon-comments"></i></div>
+                        <div class="menu-item-text">Feedback</div>
+                    </div>
+                    <!--<div class="menu-item user-blog">
+						<div class="menu-item-icon"><i class="icon-pencil"></i></div>
+						<div class="menu-item-text">Blog</div>
+					</div>-->
+                    <div class="menu-item user-about">
+                        <div class="menu-item-icon"><i class="icon-info"></i></div>
+                        <div class="menu-item-text">About</div>
+                    </div>
+                    <div class="menu-item user-logout">
+                        <div class="menu-item-icon"><i class="icon-power-off"></i></div>
+                        <div class="menu-item-text">Logout</div>
+                    </div>
+                    <div class="menu-item user-profile no-hover">
+                        <img src="img/blank.gif" alt="user-logo" title="User Profile Image" class="username-icon" width="27" height="27"/>
+                        <div class="menu-item-text"><span class="username">User</span></div>
+                    </div>
+                </div>
+            </li>
+            <li class="btn-hide-watched no-login">
+                <div class="menu-watched-btn tooltip" title="Hide watched videos">
+                    <div class="menu-watched-icon icon-eye"></div>
+                </div>
+            </li>
+            <li class="btn-subscribe no-login">
+                <div class="menu-subscribe-btn tooltip" title="Subscribe">
+                    <div class="menu-watched-icon icon-shopping-cart"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="hide">
+    <article class="video-template">
+        <div class="video-container">
+            <div>
+                <a class="video-thumb" data-rel="url">
+                    <div>
+                        <img src="img/blank.gif" alt="video-thumb"/>
+                    </div>
+                    <span class="video-length"></span>
+                    <span class="video-rating"><span class="video-liking"></span></span>
+                </a>
+                <div class="video-watched-toggle rounded-corners3 tooltip" title="Mark video as watched"><i class="icon-eye"></i></div>
+                <div class="video-more rounded-corners3 tooltip" title="More options"><i class="icon-ellipsis"></i></div>
+                <div class="video-content">
+                    <div class="video-title">
+                        <a data-rel="url" title="Video"></a>
+                    </div>
+                    <div class="video-description">
+                    </div>
+                    <div class="video-meta">
+                        <span class="video-views-count"></span>
+                        <span class="video-upload"></span>
+	                            <span class="feed-entry-video-username">by
+                                    <a title="Video" class="feed-entry-video-from-username" data-rel="url"></a>
+                                </span>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </article>
+
+    <section class="column-template">
+        <header class="column-header">
+            <a class="column-header-ch-link">
+                        <span>
+                            <img width="38" class="loading" height="38" src="img/blank.gif"  alt="channel-logo" />
+                        </span>
+                <h1>
+                    <strong></strong>
+                </h1>
+            </a>
+            <div class="column-options">
+                <a class="column-prev-btn tooltip" title="Move column left">
+                    <i class="column-prev-btn-icon icon-caret-left"></i>
+                </a>
+                <a class="column-next-btn tooltip" title="Move column right">
+                    <i class="column-next-btn-icon  icon-caret-right"></i>
+                </a>
+                <a class="column-close-btn tooltip" title="Remove column">
+                    <i class="column-close-btn-icon icon-x"></i>
+                </a>
+                <a class="column-sort-btn tooltip hide" title="Change ordering">
+                    <i class="column-sort-btn-icon"></i>
+                </a>
+            </div>
+
+            <a class="column-options-btn tooltip" title="Show options">
+                <i class="column-options-btn-icon icon-gear-setting"></i>
+            </a>
+            <a class="column-play-btn tooltip" title="Play all">
+                <i class="column-play-btn-icon icon-youtube-play"></i>
+            </a>
+            <a class="column-watched-btn tooltip" title="Mark all videos as watched">
+                <i class="column-watched-btn-icon icon-eye"></i>
+            </a>
+
+        </header>
+        <div class="column-holder">
+            <div class="column-container v-scroll">
+                <div class="column-content"></div>
+            </div>
+        </div>
+        <div class="inactive-msg-wrap">
+            <div class="inactive-msg">
+                <span>This column is currently <b>inactive</b> <br>because your subscription expired. <br><br>By <b class="btn-subscribe2">subscribing</b> you will <br>get full access to this column again.</span>
+            </div>
+        </div>
+    </section>
+</div>
+<div id="main">
+    <div id="search">
+        <div class="search-wrapper">
+            <div id="search-column" class="search-results">
+                <div class="filters">
+                    <div class="filters-header clear">
+                        <div class="search-filters">
+                            <span class="dropdown-selected">Filters</span>
+                        </div>
+                        <div class="search-total"></div>
+                        <div class="search-add-column tooltip" title="Add keywords column"><i class="icon-plus"></i></div>
+                        <div class="search-close m-close tooltip"  title="Close search"><i class="icon-x"></i></div>
+                    </div>
+                    <div class="filters-area">
+                        <div class="filters-column">
+                            <h4 class="filters-column-title">Upload Date</h4>
+                            <ul>
+                                <li><a data-filterCat="publishedAfter" data-filterParam="hour">Last hour</a></li>
+                                <li><a data-filterCat="publishedAfter" data-filterParam="day">Today</a></li>
+                                <li><a data-filterCat="publishedAfter" data-filterParam="week">This week</a></li>
+                                <li><a data-filterCat="publishedAfter" data-filterParam="month">This month</a></li>
+                                <li><a data-filterCat="publishedAfter" data-filterParam="year">This year</a></li>
+                            </ul>
+                        </div>
+                        <div class="filters-column">
+                            <h4 class="filters-column-title">Result type</h4>
+                            <ul>
+                                <li><a data-filterCat="type" data-filterParam="video">Video</a></li>
+                                <li><a data-filterCat="type" data-filterParam="channel">Channel</a></li>
+                                <li><a data-filterCat="type" data-filterParam="playlist">Playlist</a></li>
+                                <li><a data-filterCat="videoType" data-filterParam="movie">Movie</a></li>
+                                <!--<li><a data-filterCat="channelType" data-filterParam="show">Show</a></li>-->
+                            </ul>
+                        </div>
+                        <div class="filters-column features">
+                            <h4 class="filters-column-title">Features</h4>
+                            <ul>
+                                <li><a data-filterCat="videoDefinition" data-filterParam="high">HD (high definition)</a></li>
+                                <li><a data-filterCat="videoCaption" data-filterParam="closedCaption">CC (closed caption)</a></li>
+                                <li><a data-filterCat="videoLicense" data-filterParam="creativeCommon">Creative commons</a></li>
+                                <li><a data-filterCat="videoDimension" data-filterParam="3d">3D</a></li>
+                                <li><a data-filterCat="eventType" data-filterParam="live">Live</a></li>
+                            </ul>
+                        </div>
+                        <div class="filters-column">
+                            <h4 class="filters-column-title">Duration</h4>
+                            <ul>
+                                <li><a data-filterCat="videoDuration" data-filterParam="short">Short (~4)</a></li>
+                                <li><a data-filterCat="videoDuration" data-filterParam="medium">Medium</a></li>
+                                <li><a data-filterCat="videoDuration" data-filterParam="long">Long (20~)</a></li>
+                            </ul>
+                        </div>
+                        <div class="filters-column sortby">
+                            <h4 class="filters-column-title">Sort by</h4>
+                            <ul>
+                                <li><a class="selected" data-filterCat="order" data-filterParam="relevance">Relevance</a></li>
+                                <li><a data-filterCat="order" data-filterParam="date">Upload date</a></li>
+                                <li><a data-filterCat="order" data-filterParam="viewCount">View Count</a></li>
+                                <li><a data-filterCat="order" data-filterParam="rating">Rating</a></li>
+                            </ul>
+                        </div>
+                        <div class="filters-clear hide"><a>Clear all filters</a></div>
+                    </div>
+                </div>
+
+                <div class="column-holder">
+                    <div class="column-container v-scroll"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container" class="h-scroll block">
+        <div id="columns">
+
+        </div>
+        <div id="empty-msg" class="empty-msg-wrap">
+            <div class="empty-msg-outter">
+                <div class="empty-msg">
+                    <div class="empty-msg-icon icon-ytvd">
+
+                    </div>
+                    <div class="empty-msg-text">
+                        <div class="empty-msg1">
+                            <span class="bold empty-title">Clean Deck</span><br/>
+                            Add Columns by Clicking on <span class="bold menu-add-btn2 btn-link">Plus Icon</span>,<br>
+                            or <span class="bold user-guide btn-link">Click here to start Tour</span>.
+                        </div>
+                        <div class="empty-msg2">
+                            <span class="bold empty-title">Good News Everyone!</span><br/>
+                            There are no new videos for you to watch.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo-bottom">
+        <!--<div class="promo-bottom-close"><i class="icon-x"></i></div>-->
+        <div class="promo-bottom-content"></div>
+    </div>
+    <div class="promo-left">
+        <!--<div class="promo-left-close"><i class="icon-x"></i></div>-->
+        <div class="promo-left-content"></div>
+    </div>
+
+</div>
+<div class="more-menu more-menu-template">
+    <div class="menu-caret"></div>
+    <ul>
+        <li class="menu-watch-later"><span>Watch later</span></li>
+        <li class="menu-remove-from-playlist"><span>Remove</span></li>
+        <li class="hide">
+            <span>Add to ...</span>
+            <ul class="menu-add-to">
+                <li><span class="add-to-custom">Custom Column</span>
+                    <ul class="menu-custom-columns">
+
+                    </ul>
+                </li>
+                <li><span class="add-to-playlist">My Playlists</span></li>
+            </ul>
+        </li>
+        <li>
+            <span>Share to ...</span>
+            <ul class="menu-share-links">
+                <li><span class="icon social-fb"></span><span>Facebook</span></li>
+                <li><span class="icon social-tw"></span><span>Twitter</span></li>
+                <li><span class="icon social-gp"></span><span>Google+</span></li>
+                <li><span class="icon social-tb"></span><span>tumblr</span></li>
+                <li><span class="icon social-bl"></span><span>Blogger</span></li>
+                <li><span class="icon social-rd"></span><span>reddit</span></li>
+                <li><span class="icon social-li"></span><span>LinkedIn</span></li>
+                <li><span class="icon social-pt"></span><span>pinterest</span></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="tip-overlay hide"></div>
+
+<a class="logout-link hide" href="#">Stuck with wrong account? Logout here.</a>
+
+<div class="modal-dialog v-scroll3 animate" id="modal-video">
+    <header class="m-header">
+        <a class="m-comment m-video-btn tooltip" title="Show comments"><div class="menu-video-icon menu-comment-icon icon-talk-chat-2"></div></a>
+        <a class="m-description m-video-btn tooltip" title="Show description"><div class="menu-video-icon menu-description-icon icon-description"></div></a>
+        <a class="m-like tooltip" title="Like video" href="#"><i class="like icon-thumbs-up"></i></a>
+                                <span class="m-rating">
+                                    <span class="m-like-num">
+                                        <span class="m-like-icon icon-thumbs-up"></span>
+                                        <span class="num"></span></span>
+                                    <span class="m-dislike-num">
+                                        <span class="m-dislike-icon icon-thumbs-down"></span>
+                                        <span class="num"></span>
+                                    </span>
+                                    <span class="m-liking">
+                                        <span class="m-disliking"></span>
+                                    </span>
+                                </span>
+        <a class="m-dislike tooltip" title="Dislike video" href="#"><i class="dislike icon-thumbs-down"></i></a>
+        <span class="m-views"><span class="num"></span><span> views</span></span>
+
+        <a class="m-shuffle tooltip" href="#" title="Shuffle"><i class="icon-random"></i></a>
+        <a class="m-loop tooltip" href="#" title="Repeat"><i class="icon-retweet"></i></a>
+        <a class="m-dock tooltip" title="Dock video" href="#"><i class="dock icon-resize-down"></i></a>
+        <a class="m-watched-close tooltip" title="Close Video and mark it as watched" href="#"><i class="dock icon-eye"></i></a>
+        <a class="m-close tooltip" href="#" title="Close Video"><i class="icon-x"></i></a>
+    </header>
+    <div class="m-comments m-side-video-panel v-scroll">
+        <div class="comment-write hide">
+            <img class="comment-author" alt="Profile Picture" height="48" width="48" src=""/>
+            <div class="comment-area-arrow"></div>
+            <textarea class="comment-area" placeholder="Share your thoughts"></textarea>
+            <div class="dropdown-wrapper"><span class="dropdown-selected"></span>
+                <ul class="dropdown">
+                    <li><a href="#" data-value="newest">Newest first</a></li>
+                    <li><a href="#" data-value="top">Top comments</a></li>
+                </ul>
+            </div>
+            <div class="comment-post">
+                Post comment
+            </div>
+        </div>
+        <div class="comment-template">
+            <img class="comment-thumb" height="48" width="48" alt="Profile Picture" src=""/>
+            <div class="comment-right">
+                <div class="comment-top">
+                    <a class="comment-user" target="_blank"></a>
+                    <div class="comment-date"></div>
+                    <div class="comment-remove hide tooltip" title="Delete comment"><i class="icon-x"></i> </div>
+                </div>
+                <div class="comment-text"></div>
+            </div>
+            <div>
+                <a class="comment-reply">Reply</a>
+                <div class="comment-span">&nbsp;·&nbsp;</div>
+                <div class="comment-likes"></div>
+            </div>
+            <div class="comment-replies-holder"></div>
+        </div>
+    </div>
+    <div class="m-description-wrap m-side-video-panel v-scroll">
+        <div class="m-description-content">
+            <div class="m-description-channel show-descriptions">
+
+            </div>
+            <div class="m-description-title"></div>
+            <div class="m-description-text"></div>
+        </div>
+    </div>
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+
+                <header class="docked-header">
+                    <a class="m-shuffle tooltip" href="#" title="Shuffle"><i class="icon-random"></i></a>
+                    <a class="m-loop tooltip" href="#" title="Repeat"><i class="icon-retweet"></i></a>
+                    <a class="m-dock tooltip" title="Undock video" href="#"><i class="undock icon-resize-expand"></i></a>
+                    <a class="m-watched-close tooltip" title="Close Video and mark it as watched" href="#"><i class="dock icon-eye"></i></a>
+                    <a class="m-close tooltip" title="Close Dialog" href="#"><i class="icon-x"></i></a>
+                </header>
+
+                <div class="m-container" id="yt-container">
+                    <div>
+                        <iframe id="ytPlayer" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/?enablejsapi=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="next-video">Play Next Video</div>
+                    <div class="start-overlay">
+                        <div class="start-overlay-btns">
+                            <div class="start-from-beginning">Start from beginning</div>
+                            <div class="start-from-last-position">Resume from <span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog v-scroll" id="modal-add-subs">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3><i class="icon-torsos"></i> Add Subscription</h3>
+                    <a class="m-close" href="#" title="Close add subscriptions"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container">
+                    <div class="sub-filter-wrap">
+                        <input type="text" class="sub-filter" data-bind="sub-items" data-default="Filter subscriptions" value="Filter subscriptions"/>
+                    </div>
+                    <div class="sub-items-container v-scroll v-scroll2">
+                        <ul class="sub-items clear">
+                            <li class="sub-item">
+                                <a class="btn sub-item-btn" href="#" title="Channel"> <img class="sub-item-icon loading" width="46" height="46" src="img/blank.gif" alt="channel-logo" title="Channel Image" /><span></span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog v-scroll" id="modal-custom-columns">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content" >
+                <header class="m-header">
+                    <h3><i class="icon-results-demographics"></i> Custom columns</h3>
+                    <a class="m-close" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container">
+                    <div class="create-custom-column"><i class="icon-plus"></i> Create Custom Column</div>
+                    <div class="custom-seperator"></div>
+                    <div class="sub-items-container v-scroll v-scroll2">
+                        <ul class="sub-items clear">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog v-scroll" id="modal-add-custom-column">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3><i class="icon-results-demographics"></i> Create custom column</h3>
+                    <a class="m-close" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container">
+
+                    <div class="custom-seperator-btn-top">
+                        <div class="sub-filter-wrap">
+                            <input type="text" class="sub-filter" data-bind="all-sub-items" data-default="Filter subscriptions" value="Filter subscriptions"/>
+                        </div>
+                        <div class="custom-seperator-btn-wrap continue  active">
+                            <input type="checkbox" id="hide-channels-on-deck" checked="checked">
+                            <label for="hide-channels-on-deck">Show channels added to deck</label>
+                        </div>
+                    </div>
+                    <div class="all-sub-items-container v-scroll v-scroll2">
+                        <ul class="all-sub-items clear">
+                        </ul>
+                    </div>
+                    <div class="custom-column-container">
+                        <div class="custom-column-container-wrap">
+                            <div class="custom-column-name-wrap">
+                                <input type="text" class="custom-column-name" value="Enter column name here"/>
+                            </div>
+                            <div class="custom-column-items-container v-scroll v-scroll2">
+                                <ul class="custom-column-items clear">
+                                </ul>
+                            </div>
+                            <div class="custom-seperator-btn">
+                                <div class="custom-seperator-btn-wrap">
+                                    <div class="custom-column-save"><i class="icon-check-mark"></i> <span>Add column</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog v-scroll" id="modal-add-playlist">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3><i class="icon-list-thumbnails"></i> Add Playlist</h3>
+                    <a class="m-close" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container">
+                    <div class="sub-filter-wrap">
+                        <input type="text" class="sub-filter" data-bind="playlist-sub-items" data-default="Filter subscriptions" value="Filter subscriptions"/>
+                    </div>
+                    <div class="sub-items-container v-scroll v-scroll2">
+                        <ul class="playlist-sub-items clear">
+                            <li class="sub-item">
+                                <a class="btn sub-item-btn" href="#"> <div class="icon"><i class="icon-list-thumbnails"></i></div><span data-sub-id="default">My Playlists</span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-dialog v-scroll" id="modal-playlists">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3><i class="icon-list-thumbnails"></i> Playlists</h3>
+                    <a class="m-close" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container">
+                    <div class="sub-filter-wrap">
+                        <input type="text" class="sub-filter" data-bind="playlist-sub-items" data-default="Filter playlists" value="Filter playlists"/>
+                    </div>
+                    <div class="sub-items-container v-scroll v-scroll2">
+                        <ul class="playlist-sub-items clear">
+                            <li class="sub-item template">
+                                <a class="btn sub-item-btn" href="#"> <img class="sub-item-icon" width="46" height="46" src="img/loading.gif" /><span class="truncate">Loading</span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog " id="modal-settings">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3><i class="icon-gear-setting-2"></i> Settings</h3>
+                    <a class="m-close" href="#" title="Close Settings"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container autoHeight">
+                    <form action="/" method="get">
+                        <ul class="settings clear">
+                            <li class="settings-item continue">
+                                <div class="settings-item-label" >Notifications:</div>
+                                <input type="checkbox" name="show-notification" value="show-notification" id="show-notification" /><label for="show-notification" class="checkbox-label">Show notifications</label>
+                            </li>
+                            <li class="settings-item ">
+                                <input type="checkbox" name="sound-notification" value="sound-notification" id="sound-notification" /><label for="sound-notification" class="checkbox-label">Sound notification</label>
+                            </li>
+
+
+                            <li class="settings-item continue">
+                                <div class="settings-item-label" >Layout:</div>
+                                <input type="radio" name="layout" value="horizontal" id="layout-horizontal" /><label for="layout-horizontal" class="checkbox-label">Horizontal</label>
+                                <input type="radio" name="layout" value="vertical" id="layout-vertical" checked="checked" /><label for="layout-vertical" class="checkbox-label">Vertical</label><br/>
+                            </li>
+
+                            <li class="settings-item continue">
+                                <label for="multirow-count" class="checkbox-label disabled">Display</label>
+                                <input type="number" autocomplete="off" name="multirow-count" value="1" id="multirow-count" min="1" max="14" disabled="disabled"/>
+                                <label for="multirow-count" class="checkbox-label disabled">videos in one cell</label>
+                            </li>
+                            <li class="settings-item continue">
+                                <input type="checkbox" name="showDescription" value="showDescription" id="showDescription" /><label for="showDescription" class="checkbox-label">Show video descriptions</label>
+                            </li>
+                            <li class="settings-item">
+                                <input type="checkbox" name="hideCollapsedColumns" value="hideCollapsedColumns" id="hideCollapsedColumns" /><label for="hideCollapsedColumns" class="checkbox-label">Hide collapsed columns</label>
+                            </li>
+
+                            <li class="settings-item continue">
+                                <div class="settings-item-label" >Video playback:</div>
+                                <input type="radio" name="video-action" value="video-outside" id="video-outside" checked="checked" /><label for="video-outside" class="checkbox-label">on YouTube</label>
+                                <input type="radio" name="video-action" value="video-inside" id="video-inside" /><label for="video-inside" class="checkbox-label">in Deck</label><br/>
+                            </li>
+                            <li class="settings-item continue">
+                                <label for="play-vq" class="checkbox-label mt">Play in </label><select name="play-vq" id="play-vq"><option value="highres">2160p</option><option value="hd1440">1440p</option><option value="hd1080">1080p</option><option value="hd720">720p</option><option value="large">480p</option><option value="medium">360p</option><option value="small">240p</option></select><label for="play-vq"> by default</label><br/>
+                            </li>
+                            <li class="settings-item continue">
+                                <label for="play-speed" class="checkbox-label mt">Default playback speed </label><select name="play-speed" id="play-speed"><option value="0.25">0.25</option><option value="0.5">0.5</option><option value="1">Normal</option><option value="1.25">1.25</option><option value="1.5">1.5</option><option value="2">2</option></select><br/>
+                            </li>
+                            <li class="settings-item">
+                                <input type="checkbox" name="autoMarkVideoWatched" value="autoMarkVideoWatched" id="autoMarkVideoWatched" /><label for="autoMarkVideoWatched" class="checkbox-label">Auto mark videos as watched</label>
+                            </li>
+
+                            <li class="settings-item continue">
+                                <div class="settings-item-label" >Play All:</div>
+                                <input type="radio" name="play-all-action" value="play-all-top" id="play-all-top" checked="checked" /><label for="play-all-top" class="checkbox-label">play from top</label>
+                                <input type="radio" name="play-all-action" value="play-all-bottom" id="play-all-bottom" /><label for="play-all-bottom" class="checkbox-label">play from bottom</label><br/>
+                            </li>
+                            <li class="settings-item">
+                                <input type="checkbox" name="playAllSkipWatched" value="playAllSkipWatched" id="playAllSkipWatched" /><label for="playAllSkipWatched" class="checkbox-label">Skip watched videos</label>
+                            </li>
+
+                        </ul>
+                        <input type="submit" name="submit" disabled="disabled" class="hide" value="Submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog v-scroll" id="modal-actions">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content" >
+                <header class="m-header">
+                    <h3><i class="icon-tools"></i> Tools</h3>
+                    <a class="m-close" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container">
+                    <div class="power-action power-action-watched">Mark All Videos As Watched</div>
+                    <div class="power-action power-action-empty">Remove All Columns</div>
+                    <div class="power-action power-action-reset">Reset All Settings</div>
+                    <div class="power-action power-action-migrate">Migrate from old YTVD</div>
+                    <div class="power-action power-action-reset-confirm">Reset confirm dialogs</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog" id="modal-about">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3><i class="icon-info"></i> About</h3>
+                    <a class="m-close" href="#" title="Close About"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container">
+                    <ul class="settings clear">
+                        <li class="about-item about">
+                            <span class="about-label" >Author:</span><span class="about-value"> ComCode d.o.o.</span>
+                            <a href="https://twitter.com/ytvideodeck" class="twitter-follow-button" target="_blank" title="Follow @ytvideodeck on Twitter">Follow @ytvideodeck on Twitter</a>
+                            <span class="about-label" >Version:</span><span class="about-value"> 1.0.4</span>
+                            <div>
+                                <ul class="policy">
+                                    <li>
+                                        <a href="https://www.videodeck.net/privacy" title="Privacy Policy">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.videodeck.net/terms" title="Terms &amp; Conditions">Terms &amp; Conditions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="copyright">Copyright © 2015 All Rights Reserved.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog" id="modal-changes">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3>What's new in version 1.0.5</h3>
+                    <a class="m-close" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container autoHeight">
+                    <ul class="settings clear">
+                        <li class="changes-item autoHeight">
+                            <ul>
+                                <li>Fixed Watch Later playlist video removal</li>
+                            </ul>
+                        </li>
+                        <li class="changes-item g-item">
+                            <div>
+                                <a href="https://chrome.google.com/webstore/detail/youtube-video-deck/mpoakikepagdiphlmfaeifpojdmbnegj/reviews" target="_blank">Rate</a> Video Deck for YouTube™ and share it with others.
+                            </div>
+
+                            <div class="g-container">
+                                <div class="g-plusone" data-callback="testr" data-href="https://chrome.google.com/webstore/detail/youtube-video-deck/mpoakikepagdiphlmfaeifpojdmbnegj"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog step-dialog" id="modal-subscribe">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3>Subscribe to Premium</h3>
+                    <a class="m-close" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container autoHeight">
+                    <ul class="m-steps clear">
+                        <li class="m-step">
+                            <div>You are using <span class="bold">Standard</span> version of<br>Video Deck for YouTube™</div>
+                            <br/>
+                            <div class="bold"><h3>Want more? Go premium!</h3></div>
+
+                            <div class="pricing-grids">
+                                <div class="pricing-grid pricing-features">
+                                    <h3>&nbsp;</h3>
+                                    <ul>
+                                        <li><span>Subscription columns</span></li>
+                                        <li><span>Playlist columns</span></li>
+                                        <li><span>Custom columns</span></li>
+                                        <li><span>Keyword columns</span></li>
+                                        <li><span>Priority support</span></li>
+                                        <li><span>Ads</span></li>
+                                    </ul>
+                                </div>
+                                <div class="pricing-grid">
+                                    <h3>Standard</h3>
+                                    <ul>
+                                        <li><span>unlimited</span></li>
+                                        <li><span>2</span></li>
+                                        <li><span>2</span></li>
+                                        <li><span>1</span></li>
+                                        <li><span>no</span></li>
+                                        <li><span>yes</span></li>
+                                    </ul>
+                                </div>
+                                <div class="pricing-grid">
+                                    <h3 class="premium">Premium</h3>
+                                    <ul>
+                                        <li><span>unlimited</span></li>
+                                        <li><span>unlimited</span></li>
+                                        <li><span>unlimited</span></li>
+                                        <li><span>unlimited</span></li>
+                                        <li><span>yes</span></li>
+                                        <li><span>no</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li class="m-step">
+                            <div><h3>Select your plan</h3></div>
+                            <div class="pricing-grids packets" id="package-select">
+
+                            </div>
+                            <br/>
+
+                        </li>
+                        <li class="m-step">
+                            <div><h3>Your order summary</h3></div>
+                            <br/>
+                            <div>
+                                <div>Selected plan</div>
+                                <div class="pricing-grids packets" id="package-review">
+
+                                </div>
+                            </div>
+                            <div>To proceed with payment click on following button</div>
+                            <br>
+                            <div>
+                                <a class="pay-with hide">
+                                    <img src="img/paypal.png">
+                                </a>
+                                <img class="pay-with-load" src="img/loading.gif">
+                            </div>
+                            <br/>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="m-footer">
+                    <div class="dialog-btn dialog-prev"><i class="icon-chevron-left"></i></div>
+                    <div class="dialog-step"></div>
+                    <div class="dialog-btn dialog-next"><i class="icon-chevron-right"></i></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog" id="modal-connection">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3>Error</h3>
+                    <a class="m-close" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container autoHeight">
+                    <ul class="settings clear">
+                        <li class="about-item autoHeight">
+                            <div>Unable to connect. Please check your internet connection.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog step-dialog" id="modal-welcome">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3 class="modal-msg-title">Welcome</h3>
+                    <a class="m-close disabled hide" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container padding10 autoHeight">
+                    <ul class="m-steps clear">
+                        <li class="m-step">
+                            <span class="logo big content"><i class="icon-ytvd"></i></span>
+                            <div class="logo text content"></div>
+                            <div class="content-title">Hi, <span class="name"></span></div><br>
+                            <div class="content-text">We detected that you are not subscribed to any YouTube channels.<br> To start you off we have some recommendations for you.</div>
+                        </li>
+                    </ul>
+                </div>
+                <footer class="m-footer start">
+                    <div class="dialog-btn dialog-prev"><i class="icon-chevron-left"></i></div>
+                    <!--<div class="dialog-step"></div>-->
+                    <div class="dialog-btn dialog-next hidden"><i class="icon-chevron-right"></i></div>
+                    <div class="dialog-btn dialog-start show">Next</div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog" id="modal-initsub">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3 class="modal-msg-title">Start by subscribing to few channels</h3>
+                    <a class="m-close disabled hide" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container padding10">
+                    <div class="column-holder">
+                        <div class="column-container v-scroll">
+                            <div class="column-section" id="popular-channels">
+                                <article class="header first">Popular channels on YouTube</article>
+
+                            </div>
+                            <div class="column-section" id="gaming-channels">
+                                <article class="header">Gaming channels</article>
+
+                            </div>
+                            <div class="column-section" id="music-channels">
+                                <article class="header">Music channels</article>
+
+                            </div>
+                            <div class="column-section" id="sports-channels">
+                                <article class="header">Sports channels</article>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="m-footer start">
+                    <div class="dialog-step"></div>
+                    <div class="dialog-btn dialog-status">Subscribe to X more channels</div>
+                    <div class="dialog-btn dialog-start">Next</div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog" id="modal-msg">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3 class="modal-msg-title"></h3>
+                    <a class="m-close" href="#"><i class="icon-x"></i></a>
+                    <div class="m-timeout"></div>
+                </header>
+                <div class="m-container autoHeight">
+                    <ul class="settings clear">
+                        <li class="about-item autoHeight">
+                            <div class="modal-msg-text"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog btn-dialog" id="modal-confirm">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3>Warning</h3>
+                    <a class="m-close" href="#"><i class="icon-x"></i></a>
+                </header>
+                <div class="m-container autoHeight">
+                    <div id="confirm-text">
+                        Are you sure?
+                    </div>
+                    <div class="confirm-skip">
+                        <input type="checkbox" id="confirm-skip">
+                        <label for="confirm-skip">Don't show me this again</label>
+                    </div>
+                </div>
+                <footer class="m-footer">
+                    <div class="dialog-btn dialog-prev"><i class="icon-remove"></i></div>
+                    <div class="dialog-step"></div>
+                    <div class="dialog-btn dialog-next"><i class="icon-check-mark"></i></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog" id="modal-loading1">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <header class="m-header">
+                    <h3 id="loading-title"></h3>
+                </header>
+                <div class="m-container autoHeight">
+                    <ul class="settings clear">
+                        <li class="loading-item">
+                            <div class="spinner-article spinner"></div>
+                            <div id="loading-text1">Unable to connect.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-dialog init solid" id="modal-loading">
+    <div class="m-wrap">
+        <div class="m-center">
+            <div class="m-content">
+                <div class="m-container autoHeight">
+                    <div class="login-logo-holder">
+                        <div class="login-logo-holder-wrap">
+                            <span class="logo big"><i class="icon-ytvd"></i></span>
+                            <span class="logo text"></span>
+                        </div>
+                    </div>
+                    <ul class="settings clear">
+                        <li class="profile-image">
+                            <h1 class="profile-welcome">Welcome!</h1>
+                            <img src="img/avatar.png" />
+                            <div class="profile-name">&nbsp;</div>
+                        </li>
+                        <li class="signin-btn-wrap user-login">
+                            <div class="signin-btn"><i class="icon-google"></i> Sign in with Google <i class="icon-angle-right"></i></div>
+                        </li>
+                        <li class="loading-wrap">
+                            <div class="spinner-article spinner"></div>
+                            <div id="loading-text">
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

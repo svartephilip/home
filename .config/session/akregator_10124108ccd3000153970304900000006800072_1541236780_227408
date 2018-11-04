@@ -1,0 +1,14 @@
+[1]
+Children=
+docked=true
+searchCombo=0
+
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+ClassName=Akregator::MainWindow
+Height 1080=1062
+ObjectName=MainWindow#1
+State=AAAA/wAAAAD9AAAAAAAAAoAAAAPJAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+Width 1920=640

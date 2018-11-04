@@ -1,0 +1,36 @@
+{
+    "auto-launch": false,
+    "enableJSON_API": true,
+    "miniUseScrollVolume": false,
+    "minToTray": true,
+    "nativeFrame": true,
+    "savePage": false,
+    "scrollLyrics": true,
+    "startMinimized": false,
+    "theme": true,
+    "themeColor": "rgb(244, 67, 54)",
+    "themeType": "FULL",
+    "themeTypeShouldTrackSystem": false,
+    "preventDisplaySleep": false,
+    "enableWin10MediaService": false,
+    "enableWin10MediaServiceTrackInfo": true,
+    "lastFMMapThumbToHeart": true,
+    "service": "youtube-music",
+    "uuid": "ad82a039-2907-423a-b0e0-beb7a2a9c56f",
+    "fullscreen": false,
+    "maximized": false,
+    "position": [
+        0,
+        1098
+    ],
+    "size": [
+        1920,
+        1062
+    ],
+    "welcomed": "4.6.1",
+    "lastPage": "https://play.google.com/music/listen#/recents",
+    "discordRichPresence": false,
+    "playbackAPI": true,
+    "skipBadSongs": true,
+    "lastYTMPage": "https://music.youtube.com/"
+}

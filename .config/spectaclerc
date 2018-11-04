@@ -1,0 +1,9 @@
+[FileDialogSize]
+Height 1440=480
+Width 2560=640
+
+[GuiConfig]
+captureModeIndex=4
+cropRegion=3015,626,302,307
+lastUsedSaveMode=0
+window-position=2310,361

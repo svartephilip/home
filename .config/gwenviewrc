@@ -1,0 +1,19 @@
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update
+
+[MainWindow]
+Height 1440=1222
+State=AAAA/wAAAAD9AAAAAAAABGoAAASPAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 2560=1130
+
+[Recent Files]
+File1[$e]=https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Electron_shell_003_Lithium_-_no_label.svg/450px-Electron_shell_003_Lithium_-_no_label.svg.png
+File2[$e]=$HOME/Downloads/horizontal_on_corporate_by_logaster.png
+File3[$e]=$HOME/Downloads/horizontal_on_corporate_by_logaster.jpeg
+Name1[$e]=450px-Electron_shell_003_Lithium_-_no_label.svg.png
+Name2[$e]=horizontal_on_corporate_by_logaster.png
+Name3[$e]=horizontal_on_corporate_by_logaster.jpeg
+
+[SideBar]
+SideBarSplitterSizes=242,882

@@ -1,0 +1,1 @@
+!function(){"use strict";angular.module("app.common").factory("httpRequestInterceptor",["constants",function(e){return{request:function(t){return Utilities.isUndefinedOrNull(t.timeout)&&(t.timeout=e.TIMEOUT.DEFAULT_REQUEST),t}}}])}();

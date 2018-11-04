@@ -1,0 +1,43 @@
+[Containments][2][General]
+AppletOrder=3;4;5;25
+
+[Containments][24][General]
+AppletOrder=25;26;27;28;30
+
+[Containments][26][General]
+extraItems=org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.ktp-contactlist,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement
+knownItems=org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.ktp-contactlist,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement
+
+[Containments][29][General]
+extraItems=org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.ktp-contactlist,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement
+knownItems=org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.discovernotifier,org.kde.plasma.vault,org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.ktp-contactlist,org.kde.plasma.printmanager,org.kde.plasma.networkmanagement
+
+[DownloadDialog Settings]
+Height 1080=510
+Width 1920=700
+
+[PlasmaRunnerManager]
+LaunchCounts=1 services_firefox.desktop,10 services_systemsettings.desktop,1 services_org.kde.dolphin.desktop,1 services_spotify.desktop
+pluginWhiteList=services,places,desktopsessions,PowerDevil,shell,bookmarks,recentdocuments,locations,baloosearch
+
+[PlasmaViews][Panel 2]
+alignment=132
+panelVisibility=0
+
+[PlasmaViews][Panel 2][Horizontal1920]
+thickness=26
+
+[PlasmaViews][Panel 2][Horizontal2560]
+thickness=30
+
+[PlasmaViews][Panel 24][Horizontal1920]
+thickness=36
+
+[ScreenConnectors]
+0=eDP1
+1=DP1
+2=:0.0
+3=HDMI2
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js

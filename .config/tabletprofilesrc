@@ -1,0 +1,37 @@
+[056A:0377]
+CurrentProfileEntry=-1
+ProfileRotationList=
+
+[056A:0377][Default][eraser]
+Button1=1
+Button2=2
+Button3=3
+Mode=absolute
+PressureCurve=0 0 100 100
+RawSample=4
+Rotate=auto-inverted
+ScreenMap=DP1:-117 522 15083 9072|HDMI2:0 0 15200 9500|desktop:0 0 15200 9500
+ScreenSpace=DP1
+Suppress=2
+Threshold=27
+
+[056A:0377][Default][pad]
+Button1=0
+Button2=0
+Button3=0
+Button4=key del
+
+[056A:0377][Default][stylus]
+Area=-117 522 15083 9072
+Button1=1
+Button2=2
+Button3=3
+Mode=absolute
+PressureCurve=0 0 100 100
+RawSample=4
+Rotate=auto-inverted
+ScreenMap=DP1:-117 522 15083 9072|HDMI2:0 0 15200 9500|desktop:0 0 15200 9500
+ScreenSpace=DP1
+Suppress=2
+TabletPcButton=off
+Threshold=27

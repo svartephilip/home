@@ -1,0 +1,18 @@
+VirtualBox GUI VM Selector Window 5.2.20 r125587 linux.amd64 (Oct 16 2018 14:03:25) release log
+00:00:00.371733 Log opened 2018-11-04T15:02:15.599152000Z
+00:00:00.371734 Build Type: release
+00:00:00.371736 OS Product: Linux
+00:00:00.371737 OS Release: 4.18.16-arch1-1-ARCH
+00:00:00.371738 OS Version: #1 SMP PREEMPT Sat Oct 20 22:06:45 UTC 2018
+00:00:00.371755 DMI Product Name: UX530UQ
+00:00:00.371761 DMI Product Version: 1.0       
+00:00:00.371794 Host RAM: 15922MB (15.5GB) total, 15448MB (15.0GB) available
+00:00:00.371797 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.371797 Process ID: 3329
+00:00:00.371798 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.371815 Qt version: 5.11.2
+00:00:00.395950 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.496922 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 2824x118 x 753x1222
+00:00:00.497986 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 2020x118 x 704x1222
+00:00:00.498332 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 2 work area is actually resized to: 3677x118 x 703x1222
+00:00:00.503481 GUI: UIMediumEnumerator: Medium-enumeration finished!

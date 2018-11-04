@@ -1,0 +1,75 @@
+{
+   "app": {
+      "icon_color": "#CD201F",
+      "launch": {
+         "web_url": "https://youtube.videodeck.net/"
+      },
+      "linked_icons": [ {
+         "size": 16,
+         "url": "https://youtube.videodeck.net/favicon-16x16.png?version=120"
+      }, {
+         "size": 32,
+         "url": "https://youtube.videodeck.net/favicon.ico?version=120"
+      }, {
+         "size": 48,
+         "url": "https://youtube.videodeck.net/favicon.ico?version=120"
+      }, {
+         "size": 57,
+         "url": "https://youtube.videodeck.net/apple-touch-icon-57x57.png?version=120"
+      }, {
+         "size": 64,
+         "url": "https://youtube.videodeck.net/apple-touch-icon-72x72.png?version=120"
+      }, {
+         "size": 72,
+         "url": "https://youtube.videodeck.net/apple-touch-icon-72x72.png?version=120"
+      }, {
+         "size": 76,
+         "url": "https://youtube.videodeck.net/apple-touch-icon-76x76.png?version=120"
+      }, {
+         "size": 96,
+         "url": "https://youtube.videodeck.net/favicon-96x96.png?version=120"
+      }, {
+         "size": 114,
+         "url": "https://youtube.videodeck.net/apple-touch-icon-114x114.png?version=120"
+      }, {
+         "size": 120,
+         "url": "https://youtube.videodeck.net/apple-touch-icon-120x120.png?version=120"
+      }, {
+         "size": 128,
+         "url": "https://youtube.videodeck.net/apple-touch-icon-144x144.png?version=120"
+      }, {
+         "size": 144,
+         "url": "https://youtube.videodeck.net/apple-touch-icon-144x144.png?version=120"
+      }, {
+         "size": 152,
+         "url": "https://youtube.videodeck.net/apple-touch-icon-152x152.png?version=120"
+      }, {
+         "size": 192,
+         "url": "https://youtube.videodeck.net/images/icon192.png?version=120"
+      }, {
+         "size": 256,
+         "url": "https://youtube.videodeck.net/images/icon192.png?version=120"
+      } ]
+   },
+   "description": "Easiest way to follow videos of your favorite YouTube subscriptions.",
+   "icons": {
+      "114": "icons/114.png",
+      "120": "icons/120.png",
+      "128": "icons/128.png",
+      "144": "icons/144.png",
+      "152": "icons/152.png",
+      "16": "icons/16.png",
+      "192": "icons/192.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "57": "icons/57.png",
+      "64": "icons/64.png",
+      "72": "icons/72.png",
+      "76": "icons/76.png",
+      "96": "icons/96.png"
+   },
+   "key": "2KWRcVrV0EIZmFwrXRx/ZrxMZOYowYgUYMkrcri3sq8=",
+   "name": "Video Deck for YouTube™",
+   "version": "2018.10.17.42822"
+}

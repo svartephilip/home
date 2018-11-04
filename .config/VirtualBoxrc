@@ -1,0 +1,7 @@
+[FileDialogSize]
+Height 1440=480
+Width 2560=640
+
+[KFileDialog Settings]
+Recent Files[$e]=iso,file:$HOME/Desktop/windows.iso
+Recent URLs[$e]=file:$HOME/.config/VirtualBox/

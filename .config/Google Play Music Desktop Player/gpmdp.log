@@ -1,0 +1,9 @@
+{"level":"info","message":"Application started.","timestamp":"2018-10-17T15:03:02.465Z"}
+{"level":"info","message":"Application exiting...","timestamp":"2018-10-17T15:09:06.673Z"}
+{"level":"info","message":"Application started.","timestamp":"2018-10-17T15:18:47.504Z"}
+{"level":"error","message":"Last.fm API keys have not been set!","timestamp":"2018-10-17T15:18:47.796Z"}
+{"level":"error","message":"Could not initialize bonjour service with error: {\"errorCode\":-65537}","timestamp":"2018-10-17T15:18:47.934Z"}
+{"level":"info","message":"Application exiting...","timestamp":"2018-10-17T15:25:10.573Z"}
+{"level":"info","message":"Application started.","timestamp":"2018-10-17T15:28:51.934Z"}
+{"level":"error","message":"Could not initialize bonjour service with error: {\"errorCode\":-65537}","timestamp":"2018-10-17T15:28:52.423Z"}
+{"level":"info","message":"Application exiting...","timestamp":"2018-10-17T15:45:42.352Z"}

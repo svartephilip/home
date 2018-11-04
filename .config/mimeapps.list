@@ -1,0 +1,4 @@
+[Added Associations]
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
+application/pdf=okularApplication_pdf.desktop;
+application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;chromium.desktop;

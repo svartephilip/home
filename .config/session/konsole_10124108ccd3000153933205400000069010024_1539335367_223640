@@ -1,0 +1,22 @@
+[1]
+Active=1
+Sessions=1
+
+[Number]
+NumberOfSessions=1
+NumberOfWindows=1
+
+[Session1]
+Encoding=UTF-8
+LocalTab=%d : %n
+Profile[$e]=FALLBACK/
+RemoteTab=(%u) %H
+SessionGuid={7838750a-959a-4f77-b21c-1a2cdf8d2d34}
+WorkingDir[$e]=$HOME
+
+[WindowProperties1]
+ClassName=Konsole::MainWindow
+Height 1080=1041
+ObjectName=MainWindow#1
+State=AAAA/wAAAAD9AAAAAAAAB3wAAAPZAAAABAAAAAQAAAAIAAAACPwAAAAA
+Width 1920=1916

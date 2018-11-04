@@ -1,0 +1,24 @@
+{
+   "background": {
+      "scripts": [ "background.min.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon128.png"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://clients1.google.com https://s.ytimg.com https://www.youtube.com https://www.google-analytics.com https://www.gstatic.com https://apis.google.com https://ads.videodeck.net https://plus.google.com;  object-src 'self'  https://www.youtube.com",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "24": "img/icon24.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCmKua2/Oro2oHvGJ+a05CHAO20E1/V1nrsvxDnb+2YAUnCJJQFXuTSH3fRCa8FHeDM/nUvr6heehCoziH5fm2z4YtVjU3o9gDuyjDCHksI6wTWJIv2hGbagyQxMBGHhO5gnN/s7nwWUhm0d7aYUNsGJnucW/+QDV6qQqFK5IEwzwIDAQAB",
+   "manifest_version": 2,
+   "name": "Video Deck for YouTube™",
+   "permissions": [ "notifications", "storage", "unlimitedStorage", "https://*.ytimg.com/", "https://*.googleusercontent.com/", "https://*.ytdeck.com/", "https://*.videodeck.net/", "http://gdata.youtube.com/", "https://www.google.com/accounts/OAuthGetRequestToken", "https://www.google.com/accounts/OAuthAuthorizeToken", "https://www.google.com/accounts/OAuthGetAccessToken" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.7"
+}

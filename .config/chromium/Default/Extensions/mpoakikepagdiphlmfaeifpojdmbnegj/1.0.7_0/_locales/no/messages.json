@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Video Deck for YouTube™",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Best way to manage your YouTube subscriptions perfectly!", 
+    "description":"The description of the application, displayed in the web store."
+  }
+}

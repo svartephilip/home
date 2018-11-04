@@ -1,0 +1,165 @@
+﻿/*!*************************************************************
+ *
+ *    Video Deck for YouTube™ (c) by COMCODE d.o.o. <info@comcode.si>
+ * 
+ *    Video Deck for YouTube™ is licensed under a
+ *    Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+ *      
+ *    See license.txt for terms of usage or read online:
+ *    <http://creativecommons.org/licenses/by-nc-nd/3.0/>
+ *  
+ **************************************************************/
+
+body{
+    background-color: #292827;
+    display: inline-block;
+    font-size: 13px;
+    height: 100%;
+    margin: 0 6px 0 0;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    white-space: normal;
+    padding-bottom:5px;
+    width: 290px; 
+    pointer:normal !important;
+    font: 12px "HelveticaNeue","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+    text-rendering: optimizelegibility;
+}
+
+.video-thumb {
+  background-color: white;
+  float: left;
+  position: relative;
+  height:42px;
+  width:64px;
+  border: 1px solid lightGrey;
+  border-bottom-left-radius: 3px 3px;
+  border-bottom-right-radius: 3px 3px;
+  border-top-left-radius: 3px 3px;
+  border-top-right-radius: 3px 3px;
+  display: block;
+  overflow: hidden;
+  padding: 1px;
+}
+
+.video-thumb > div {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 42px;
+  width: 64px;
+}
+
+.video-thumb >  div img {
+  width: 64px;
+  left: 0px;
+  top: -3px;
+  display: block;
+  outline: none;
+  position: absolute;
+}
+
+.video-length {
+  background-color: black;
+  border-bottom-left-radius: 3px 3px;
+  border-bottom-right-radius: 3px 3px;
+  border-top-left-radius: 3px 3px;
+  border-top-right-radius: 3px 3px;
+  color: white !important;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  height: 12px;
+  line-height: 12px;
+  opacity: 0.75;
+  padding: 0px 4px;
+  vertical-align: top;
+  margin-right: 0px;
+  margin-top: 0px;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+
+.video-content {
+  width: 200px;
+  float: left;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-top: 0px;
+}
+
+.video-title {
+  font-size: 12px;
+  font-weight: bold;
+  height: 15px;
+  overflow: hidden;
+}
+
+.video-title a {
+  float: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width:200px;
+  text-align: left;
+}
+
+.video-title a:hover {
+    text-decoration: underline;
+}
+
+.video-description {
+  color: #666;
+  margin-top: 3px;
+  max-height: 50px;
+  min-height: 50px;
+  overflow: hidden;
+  text-align: left;
+  line-height: 13px;
+  margin-bottom: 8px;
+}
+
+.video-meta{
+  margin-top: 3px;
+  color: #666;
+  font-size: 11px;
+  text-align: left;
+}
+
+.video-author{    
+    color: #DEDEDE;
+}
+
+.video-views-count{
+    float:right;
+    color: #DEDEDE;
+}
+
+
+.video-container {
+    color: #DEDEDE;
+    display: block;
+    min-height: 90px;
+    position: relative;
+    left: 10px;
+}
+.video-container > div {
+    -moz-user-select: text;
+    line-height: 16px;
+    min-height: 73px;
+    padding: 8px 2px 10px 0;
+    position: relative;
+}
+.video-container p a {
+    color: #87C2ED;
+}
+.video-container:hover time {
+    visibility: hidden;
+}
+.video-container p a:hover {
+    color: #8DC7F1;
+    text-decoration: underline;
+}
+

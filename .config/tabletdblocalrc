@@ -1,0 +1,14 @@
+[0377]
+hwbutton1=1
+hwbutton2=3
+hwbutton3=2
+hwbutton4=8
+layout=unknown
+model=unknown
+name=Wacom Intuos BT S P
+padbuttons=4
+statusleds=0
+touchring=false
+touchstripl=false
+touchstripr=false
+wheel=false

@@ -1,0 +1,14 @@
+[1]
+HiddenTrayParent=true
+ResourcesWidth=0
+ShowArchived=false
+ShowTime=true
+ShowTimeTo=false
+
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+ClassName=MainWindow
+ObjectName=MainWin
+State=AAAA/wAAAAD9AAAAAAAAAoAAAAGcAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA

@@ -1,0 +1,47 @@
+{
+   "app": {
+      "icon_color": "#7418A8",
+      "launch": {
+         "web_url": "https://www.onenote.com/notebooks?wdorigin=ondcnotebooks&wdorigin=ondcauth1&auth=2&nf=1"
+      },
+      "linked_icons": [ {
+         "size": 16,
+         "url": "https://site-cdn.onenote.net/161101231550_Images/FavIcon_OneNote.ico"
+      }, {
+         "size": 24,
+         "url": "https://site-cdn.onenote.net/161101231550_Images/FavIcon_OneNote.ico"
+      }, {
+         "size": 32,
+         "url": "https://site-cdn.onenote.net/161101231550_Images/FavIcon_OneNote.ico"
+      }, {
+         "size": 48,
+         "url": "https://site-cdn.onenote.net/161101231550_Images/FavIcon_OneNote.ico"
+      }, {
+         "size": 64,
+         "url": "https://site-cdn.onenote.net/161101231550_Images/FavIcon_OneNote.ico"
+      }, {
+         "size": 96,
+         "url": "https://site-cdn.onenote.net/161101231550_Images/FavIcon_OneNote.ico"
+      }, {
+         "size": 128,
+         "url": "https://site-cdn.onenote.net/161101231550_Images/FavIcon_OneNote.ico"
+      }, {
+         "size": 256,
+         "url": "https://site-cdn.onenote.net/161101231550_Images/FavIcon_OneNote.ico"
+      } ]
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "24": "icons/24.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "FQr77edtMvR35+6fVzGUUX5S1OMKF2rPv1i/s24aiz4=",
+   "name": "OneNote",
+   "version": "2018.10.17.20539"
+}

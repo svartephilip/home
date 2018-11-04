@@ -1,0 +1,34 @@
+[Desktop Entry]
+FullScreen=false
+shouldShowMenuBarComingFromFullScreen=true
+shouldShowToolBarComingFromFullScreen=true
+
+[MainWindow]
+Height 1080=862
+Height 1440=1222
+State=AAAA/wAAAAD9AAAAAAAABrgAAAMaAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1720
+Width 2560=2360
+
+[Recent Files]
+File1[$e]=$HOME/MEGA/Year11/Math/assets/square.pdf
+File10[$e]=$HOME/MEGA/Year11/Math/assets/difference_of_two_squares.pdf
+File2[$e]=$HOME/MEGA/2g/Fysik/Opgave.md
+File3[$e]=$HOME/MEGA/2g/Kemi/Redoxkemi/spendingsrækken oppg.md
+File4[$e]=$HOME/MEGA/Year11/Math/math.pdf
+File5[$e]=$HOME/MEGA/Year11/Math/IB_Math_Studies_Orange_Book__edition_2_.pdf
+File6[$e]=$HOME/MEGA/Year11/Science/assets/lungs-2.pdf
+File7[$e]=$HOME/MEGA/Year11/Science/assets/lungs-1.pdf
+File8[$e]=$HOME/MEGA/Year11/Science/assets/food.pdf
+File9[$e]=$HOME/MEGA/Year11/Science/science.pdf
+Name1[$e]=square.pdf
+Name10[$e]=difference_of_two_squares.pdf
+Name2[$e]=Opgave.md
+Name3[$e]=spendingsrækken oppg.md
+Name4[$e]=math.pdf
+Name5[$e]=IB_Math_Studies_Orange_Book__edition_2_.pdf
+Name6[$e]=lungs-2.pdf
+Name7[$e]=lungs-1.pdf
+Name8[$e]=food.pdf
+Name9[$e]=science.pdf

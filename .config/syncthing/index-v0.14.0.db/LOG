@@ -1,0 +1,16 @@
+=============== Nov 4, 2018 (CET) ===============
+19:03:16.752326 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:03:16.759704 db@open opening
+19:03:16.760708 version@stat F·[] S·0B[] Sc·[]
+19:03:16.762749 db@janitor F·2 G·0
+19:03:16.762775 db@open done T·3.048109ms
+=============== Nov 4, 2018 (CET) ===============
+19:03:24.006160 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:03:24.006316 version@stat F·[] S·0B[] Sc·[]
+19:03:24.006329 db@open opening
+19:03:24.006361 journal@recovery F·1
+19:03:24.007278 journal@recovery recovering @1
+19:03:24.013393 memdb@flush created L0@2 N·8 S·287B "\x04de..can,v8":"\npr..ion,v3"
+19:03:24.014028 version@stat F·[1] S·287B[287B] Sc·[0.25]
+19:03:24.017964 db@janitor F·3 G·0
+19:03:24.017979 db@open done T·11.644793ms

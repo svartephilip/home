@@ -1,0 +1,97 @@
+2018-11-04 14:56:20.564 (0x7fff5b9f8f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:56:20.565 (0x7fff5b9f8f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:56:20.565 (0x7fff5b9f8f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:56:20.565 (0x7fff5b9f8f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:56:20.565 (0x7fff5b9f8f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:56:20.565 (0x7fff5b9f8f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:56:20.565 (0x7fff5b9f8f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:56:20.565 (0x7fff5b9f8f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:56:34.913 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 11 (BadAlloc), sequence: 517, resource id: 427, major code: 53 (CreatePixmap), minor code: 0
+2018-11-04 14:56:34.922 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 525, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:35.219 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 533, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:35.556 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 658, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:35.649 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 666, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:35.659 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 674, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:37.255 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 686, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:51.169 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 698, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:51.244 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 706, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:55.286 (0x7fff939e04b0) Warning: QXcbConnection: XCB error: 11 (BadAlloc), sequence: 515, resource id: 427, major code: 53 (CreatePixmap), minor code: 0
+2018-11-04 14:56:55.295 (0x7fff939e04b0) Debug: Connecting to KScreen...
+2018-11-04 14:56:55.332 (0x7fff939e04b0) Debug: Width x Height 2.59109 x 1.66924
+2018-11-04 14:56:55.332 (0x7fff939e04b0) Debug: Width x Height 2.59109 x 1.66924
+2018-11-04 14:56:55.332 (0x7fff939e04b0) Debug: Width x Height 3.45479 x 2.22566
+2018-11-04 14:56:55.343 (0x7fff939e04b0) Warning: QXcbConnection: XCB error: 4 (BadPixmap), sequence: 531, resource id: 41943054, major code: 54 (FreePixmap), minor code: 0
+2018-11-04 14:56:57.192 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 718, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:57.208 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 726, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:57.288 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 738, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:57.547 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 746, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:57.873 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 758, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:57.999 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 766, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:58.680 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 774, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:56:59.357 (0x7ffff2888a90) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 788, resource id: 35651599, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:57:06.220 (0x7fff28709f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:57:06.220 (0x7fff28709f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:57:06.220 (0x7fff28709f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:57:06.220 (0x7fff28709f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:57:06.220 (0x7fff28709f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:57:06.220 (0x7fff28709f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:57:06.220 (0x7fff28709f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:57:06.220 (0x7fff28709f50) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 14:57:12.278 (0x7ffe3d965b20) Warning: QXcbConnection: XCB error: 11 (BadAlloc), sequence: 517, resource id: 427, major code: 53 (CreatePixmap), minor code: 0
+2018-11-04 14:57:12.287 (0x7ffe3d965b20) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 525, resource id: 37748751, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:57:12.412 (0x7ffe3d965b20) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 533, resource id: 37748751, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:57:12.716 (0x7ffe3d965b20) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 658, resource id: 37748751, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:57:12.744 (0x7ffe3d965b20) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 666, resource id: 37748751, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:57:12.826 (0x7ffe3d965b20) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 674, resource id: 37748751, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:57:13.053 (0x7ffe3d965b20) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 682, resource id: 37748751, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:57:19.581 (0x7ffe3d965b20) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 694, resource id: 37748751, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:57:19.772 (0x7ffe3d965b20) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 704, resource id: 37748751, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 14:57:20.238 (0x7ffe3d965b20) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 719, resource id: 37748751, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:08:46.455 (0x7fffbc3efa10) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:08:46.455 (0x7fffbc3efa10) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:08:46.455 (0x7fffbc3efa10) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:08:46.455 (0x7fffbc3efa10) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:08:46.455 (0x7fffbc3efa10) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:08:46.455 (0x7fffbc3efa10) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:08:46.455 (0x7fffbc3efa10) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:08:46.455 (0x7fffbc3efa10) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:09:06.166 (0x7ffc9276afa0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:09:06.166 (0x7ffc9276afa0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:09:06.166 (0x7ffc9276afa0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:09:06.166 (0x7ffc9276afa0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:09:06.166 (0x7ffc9276afa0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:09:06.166 (0x7ffc9276afa0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:09:06.166 (0x7ffc9276afa0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:09:06.166 (0x7ffc9276afa0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:09:09.991 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 11 (BadAlloc), sequence: 517, resource id: 427, major code: 53 (CreatePixmap), minor code: 0
+2018-11-04 15:09:09.999 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 525, resource id: 52428815, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:09:10.499 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 533, resource id: 52428815, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:09:11.695 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 658, resource id: 52428815, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:09:12.467 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 666, resource id: 52428815, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:09:12.876 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 674, resource id: 52428815, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:09:14.254 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 687, resource id: 52428815, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:09:14.314 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 695, resource id: 52428815, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:09:14.439 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 703, resource id: 52428815, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:09:20.276 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 715, resource id: 52428815, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:09:20.747 (0x7ffdfa0b8770) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 725, resource id: 52428815, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:20.854 (0x7ffdc27c2ef0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:11:20.854 (0x7ffdc27c2ef0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:11:20.855 (0x7ffdc27c2ef0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:11:20.855 (0x7ffdc27c2ef0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:11:20.855 (0x7ffdc27c2ef0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:11:20.855 (0x7ffdc27c2ef0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:11:20.855 (0x7ffdc27c2ef0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:11:20.855 (0x7ffdc27c2ef0) Warning: QFSFileEngine::open: No file name specified
+2018-11-04 15:11:25.252 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 11 (BadAlloc), sequence: 517, resource id: 427, major code: 53 (CreatePixmap), minor code: 0
+2018-11-04 15:11:25.261 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 525, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:25.827 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 533, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:26.176 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 658, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:26.279 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 666, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:26.288 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 674, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:28.234 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 682, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:28.589 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 710, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:28.691 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 718, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:28.704 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 726, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:29.418 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 734, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:29.533 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 742, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0
+2018-11-04 15:11:30.807 (0x7ffc6c88b450) Warning: QXcbConnection: XCB error: 8 (BadMatch), sequence: 752, resource id: 54525967, major code: 59 (SetClipRectangles), minor code: 0

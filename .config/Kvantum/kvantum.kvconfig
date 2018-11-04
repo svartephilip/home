@@ -1,0 +1,6 @@
+[General]
+theme=KvArcDark#
+
+[Applications]
+ArcDarker=Firefox
+Default=firefox

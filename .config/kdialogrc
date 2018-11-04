@@ -1,0 +1,7 @@
+[FileDialogSize]
+Height 1440=480
+Width 2560=640
+
+[KFileDialog Settings]
+Recent Files[$e]=Electronic_configuration.pptx,file:$HOME/Downloads/Electronic_configuration.pptx
+Recent URLs[$e]=file:$HOME/Downloads/
